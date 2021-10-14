@@ -5,21 +5,24 @@
 
 
 #Load the librarys required by the program
-
-import time
-import pandas as pd
-import numpy as np
-from datetime import datetime, timedelta
-
+try:
+    import time
+    import pandas as pd
+    import numpy as np
+    from datetime import datetime, timedelta
+except import_error:
+    print('the action is not posible: {}.format(import_error)
 
 # In[2]:
 
 
 #Load the files required by the program
-chicago=pd.read_csv('chicago.csv')
-new_york=pd.read_csv('new_york_city.csv')
-washington=pd.read_csv('washington.csv')
-
+try:
+    chicago=pd.read_csv('chicago.csv')
+    new_york=pd.read_csv('new_york_city.csv')
+    washington=pd.read_csv('washington.csv')
+except import_error:
+    print('the action is not posible: {}.format(import_error)
 
 # In[3]:
 
@@ -358,8 +361,8 @@ try:
         df2=df1[df1['Month']==6]
     if month == 'All':
         df2=df1
-except:
-    print('Error')
+except import_error:
+    print('the action is not posible: {}.format(import_error)
 try:
     if day == 0:
         df3=df2[df2['Day_of_week']==0]
@@ -377,8 +380,8 @@ try:
         df3=df2[df2['Day_of_week']==6]
     if day == 7:
         df3=df2
-except:
-    print('error')
+except import_error:
+    print('the action is not posible: {}.format(import_error)
 seconds = time.process_time()
 print("Seconds since epoch = {}".format(seconds))
 
