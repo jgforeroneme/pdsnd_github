@@ -18,3 +18,8 @@ readme.txt
 ### Credits
 Udacity nanodegree and talento 4.0 project
 
+###Traduccion en español
+El presente trabajo busca poner en práctica el aprendizaje durante el curso udacity en el marco del programa Talento 4.0 del Banco Davivienda. En este trabajo, podrá explorar una aplicación que procesa datos de alquiler de bicicletas para Nueva York, Washington y Chicago.
+El trabajo sigue las pautas marcadas por el curso y tiene 2 puntos de interacción con el usuario, la primera parte donde se permite elegir el conjunto de datos a trabajar, el mes y el día.
+la segunda parte de la interacción es al final donde es posible hacer vistas de datos de 5 tuplas.
+
