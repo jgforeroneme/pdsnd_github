@@ -5,12 +5,13 @@
 
 
 #Load the librarys required by the program
-
-import time
-import pandas as pd
-import numpy as np
-from datetime import datetime, timedelta
-
+try:
+    import time
+    import pandas as pd
+    import numpy as np
+    from datetime import datetime, timedelta
+except import_error:
+    print('the action is not posible: {}.format(import_error)
 
 # In[2]:
 
